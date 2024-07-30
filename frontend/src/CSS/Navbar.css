@@ -1,0 +1,156 @@
+.navbar{
+    padding: 20px 0px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul{
+    display: flex;
+    gap: 40px;
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+}
+a{
+    color: black;
+}
+.logo{
+    width: 100px;
+    height: 30px;
+    font-weight: 600;
+    color: rgb(212, 15, 153);
+}
+.right-nav{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.nav-basket img{
+    width: 20px;
+    height: 20px;
+}
+.search{
+    width: 20px;
+    height: 20px;
+}
+.nav-sub{
+    padding: 8px 12px;
+    color: black;
+    background: transparent;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 1px solid rgb(212, 15, 153);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.nav-sub:hover{
+    background: rgb(241, 121, 205);
+
+}
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(212, 15, 153);
+}
+.nav-basket{
+    position: relative;
+}
+.nav-basket .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: rgb(212, 15, 153);
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+.navbar-profile{
+    position: relative;
+}
+ul.new-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+.navbar-profile:hover ul.new-profile-dropdown{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #feefff;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid rgb(212, 15, 153);
+    outline: 2px solid #fff;
+    list-style: none;
+
+}
+ul.new-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+ul.new-profile-dropdown img{
+    width: 20px;
+}
+ul.new-profile-dropdown li:hover{
+    color: rgb(212, 15, 153);
+}
+.navbar-profile img{
+    width: 20px;
+}
+@media (max-width:1050px){
+    .navbar .logo{
+        width: 140px;
+    }
+    .navbar ul{
+        font-size: 17px;
+        gap: 20px;
+    }
+    .right-nav{
+        gap: 30px;
+    }
+    .right-nav img{
+        width: 22px;
+
+    }
+    .right-nav button{
+        padding: 8px 25px;
+        
+    }
+}
+@media (max-width:900px){
+    .navbar .logo{
+        width: 120px;
+    }
+    .navbar ul{
+        font-size: 16px;
+        gap: 15px;
+    }
+    .right-nav{
+        gap: 20px;
+    }
+    .right-nav img{
+        width: 20px;
+
+    }
+    .right-nav button{
+        padding: 7px 20px;
+        font-size: 15px;
+        
+    }
+}
+@media (max-width:750px){
+    
+    .navbar ul{
+        display: none;
+    }
+    
+}
