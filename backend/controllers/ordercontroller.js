@@ -26,7 +26,7 @@ const frontend_url = "http://localhost:5173"
                 product_data:{
                     name:item.name
                 },
-                unit_amount:item.price*100*80
+                unit_amount:item.price
             },
             quantity:item.quantity
         }))
@@ -37,7 +37,7 @@ const frontend_url = "http://localhost:5173"
                 product_data:{
                     name:"Delivery Charges"
                 },
-                unit_amount:2*100*80
+                unit_amount:item.price*2
             },
             quantity:1
         })

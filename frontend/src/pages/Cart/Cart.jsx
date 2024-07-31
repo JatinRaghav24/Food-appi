@@ -28,9 +28,9 @@ const navigate = useNavigate();
                 <div  className="cart-title cart-it-it">
                   <img src={url+"/images/"+item.image} alt="" />
                   <p>{item.name}</p>
-                  <p>${item.price}</p>
+                  <p>{item.price}</p>
                   <p>{cartItem[item._id]}</p>
-                  <p>${item.price * cartItem[item._id]}</p>
+                  <p>{item.price * cartItem[item._id]}</p>
                   <p onClick={()=>removeFromCart(item._id)} className="cross">X</p>
                 </div>
                 <hr />
@@ -45,17 +45,17 @@ const navigate = useNavigate();
           <div>
             <div className="cart-details">
               <p>SubTotal</p>
-              <p>${getSubTotal()}</p>
+              <p>₹{getSubTotal()}</p>
             </div>
             <hr />
             <div className="cart-details">
               <p>Delivery Fee</p>
-              <p>${getSubTotal()===0?0:2}</p>
+              <p>₹{getSubTotal()===0?0:2}</p>
             </div>
             <hr />
             <div className="cart-details">
               <p>Total</p>
-              <p>${getSubTotal()===0?0:getSubTotal() + 2}</p>
+              <p>₹{getSubTotal()===0?0:getSubTotal() + 2}</p>
             </div>
           </div>
             <button onClick={()=>navigate('/order')}>Proceed To Checkout</button>
