@@ -40,7 +40,6 @@ const StoreContextProvider = (props)=>{
             
             if (itemInfo) { // Check if itemInfo is found
               totalAmount += itemInfo.price * cartItem[item];
-              console.log(totalAmount);
             } 
           }
         }
