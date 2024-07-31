@@ -24,13 +24,13 @@ const navigate = useNavigate();
         {food_list.map((item, index) => {
           if (cartItem[item._id] > 0) {
             return (
-              <div>
+              <div key={index} >
                 <div  className="cart-title cart-it-it">
                   <img src={url+"/images/"+item.image} alt="" />
                   <p>{item.name}</p>
-                  <p>{item.price}</p>
+                  <p>₹{item.price}</p>
                   <p>{cartItem[item._id]}</p>
-                  <p>{item.price * cartItem[item._id]}</p>
+                  <p>₹{item.price * cartItem[item._id]}</p>
                   <p onClick={()=>removeFromCart(item._id)} className="cross">X</p>
                 </div>
                 <hr />
