@@ -42,7 +42,7 @@ const Fooditem = ({ id, name, price, description, image }) => {
         <p className="item-desc">{description}</p>
         <div className="cart-btn">
         <p className="item-price">₹{price}</p>
-        <link rel="stylesheet" href="/order"/><button >Buy Now</button><link/>
+      <Link to="/order"><button >Buy Now</button></Link>
         </div>
         
       </div>
