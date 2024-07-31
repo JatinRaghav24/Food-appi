@@ -32,18 +32,19 @@ const StoreContextProvider = (props)=>{
     }
 
     const getSubTotal = () => {
-        
         let totalAmount = 0;
-        for (const item in cartItem) {  // Use Object.keys to get array of item IDs
+      
+        for (const item in cartItem) {
           if (cartItem[item] > 0) {
             let itemInfo = food_list.find((product) => product._id === item);
-            if (itemInfo) {  // Check if itemInfo is defined
+            
+            if (itemInfo) { // Check if itemInfo is found
               totalAmount += itemInfo.price * cartItem[item];
-            } else {
-              console.error(`Item with ID ${item} not found in food_list`);
-            }
+              console.log(totalAmount);
+            } 
           }
         }
+      
         return totalAmount;
       };
     const fetchFood = async ()=>{

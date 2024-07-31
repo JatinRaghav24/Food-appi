@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-content">
             <div className="footer-left">
             <h2 className="logo">FOOD<span>18.</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ad non aperiam, porro explicabo maxime, vero aliquid, asperiores omnis magnam quas provident repudiandae voluptatem exercitationem. Doloribus sint aliquid impedit alias.</p>
+            <p>Food18 - Online Food Ordering Service. Get Fresh & Tasty Food on Train At Your Seat. Get Fresh & Tasty Food On Train At Your Seat. Order From RailRecipe Website Or App. Rich Packaging. Fresh Food Guaranteed.</p>
             <div className="icons">
                 <img src={assets.facebook_icon} alt="" />
                 <img src={assets.linkedin_icon} alt="" />

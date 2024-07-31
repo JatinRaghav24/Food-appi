@@ -6,7 +6,7 @@ const Exploremenu = ({category,setCategory}) => {
   return (
     <div className='explore-menu' id='explore-menu'>
         <h1><span>Explore Our </span>Menu</h1>
-        <p className='menu-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore unde omnis nam eum, iusto nesciunt excepturi architecto corporis soluta repellat ab, molestias maiores atque neque amet a natus deleniti at!</p>
+        <p className='menu-text'>Tasty meals daily along with the guidance of a qualified personal nutritionist. Rich Protein Food: Nourish yourself with our flavorful protein choices. Nutritious Food. View Menu Details. Balanced Meals. Fat Loss. Doorstep Delivery.</p>
         <div className="menu-list">
             {menu_list.map((item,index)=>{
                 return (

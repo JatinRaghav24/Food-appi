@@ -10,7 +10,7 @@ const navigate = useNavigate();
 
   return (
     <div className="cart">
-      <div key={cartItem._id}  className="cart-items">
+      <div   className="cart-items">
         <div className="cart-title">
           <p>Items</p>
           <p>Title</p>

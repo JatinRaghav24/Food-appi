@@ -115,6 +115,10 @@ export const menu_list=[
     {
         menu_name: "Nodels",
         menu_image: menu_8
+    },
+    {
+        menu_name: "Pizza",
+        menu_image: menu_4
     }
 ]
 
