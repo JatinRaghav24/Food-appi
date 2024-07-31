@@ -41,8 +41,8 @@ const Fooditem = ({ id, name, price, description, image }) => {
         </div>
         <p className="item-desc">{description}</p>
         <div className="cart-btn">
-        <p className="item-price">₹{price}</p>
-      <Link to="/order"><button >Buy Now</button></Link>
+        <p className="item-price">${price}</p>
+        <button onClick={() => addTocart(id)}>Add To Cart</button>
         </div>
         
       </div>
